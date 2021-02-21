@@ -1,24 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="71ab7ebc-832f-4e9d-801c-f1ee6ef0d7f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Components/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Components/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helpers/HtmlHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Accounts/Client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Accounts/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Accounts/Staff.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.pjax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/qhn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/authentication/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/authentication/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/authentication/logo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/wh_laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wh_laravel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -134,6 +174,8 @@
       <path value="$PROJECT_DIR$/vendor/laravel/sail" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/jacobbennett/pjax" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ok1GpyTgbpjpZeEt6bl1fQupqr" />
@@ -164,16 +206,46 @@
       <option name="presentableId" value="Default" />
       <updated>1613815681584</updated>
       <workItem from="1613815682787" duration="1798000" />
+      <workItem from="1613817568004" duration="3859000" />
+      <workItem from="1613832949345" duration="19528000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="-1196" y="-19" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613821843998">
+      <screen x="-1920" y="-235" width="1920" height="1040" />
+    </state>
+    <state x="-1196" y="-19" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613821843998" />
+    <state x="-1230" y="40" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613821746071">
+      <screen x="-1920" y="-235" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="40" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613821746071" />
     <state x="-1459" y="-70" key="SettingsEditor" timestamp="1613817488905">
       <screen x="-1920" y="-235" width="1920" height="1040" />
     </state>
     <state x="-1459" y="-70" key="SettingsEditor/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613817488905" />
+    <state x="-1253" y="-116" width="585" height="801" key="find.popup" timestamp="1613911368306">
+      <screen x="-1920" y="-235" width="1920" height="1040" />
+    </state>
+    <state x="-1253" y="-116" width="585" height="801" key="find.popup/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613911368306" />
+    <state x="-1297" y="-10" width="672" height="678" key="search.everywhere.popup" timestamp="1613909342065">
+      <screen x="-1920" y="-235" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="-10" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613909342065" />
   </component>
 </project>

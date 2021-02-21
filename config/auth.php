@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Authentication Defaults
+    | AuthenticationController Defaults
     |--------------------------------------------------------------------------
     |
     | This option controls the default authentication "guard" and password
@@ -13,14 +13,14 @@ return [
     |
     */
 
-    'defaults' => [
-        'guard' => 'web',
-        'passwords' => 'users',
-    ],
+    //'defaults' => [
+    //    'guard' => 'web',
+    //    'passwords' => 'users',
+    //],
 
     /*
     |--------------------------------------------------------------------------
-    | Authentication Guards
+    | AuthenticationController Guards
     |--------------------------------------------------------------------------
     |
     | Next, you may define every authentication guard for your application.
@@ -36,6 +36,14 @@ return [
     */
 
     'guards' => [
+        'client' => [
+            'driver' => 'session',
+            'provider' => 'client',
+        ],
+        'staff' => [
+            'driver' => 'session',
+            'provider' => 'staff',
+        ],
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
@@ -70,7 +78,14 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-
+        'client' => [
+            'driver' => 'eloquent',
+            'model' => \App\Models\Accounts\Client::class,
+        ],
+        'staff' => [
+            'driver' => 'eloquent',
+            'model' => \App\Models\Accounts\Staff::class,
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
