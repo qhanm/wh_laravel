@@ -16,7 +16,8 @@ class AuthenticationMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        if(\Auth::check()){
+
+        if(\Auth::guard('staff')->check() || \Auth::guard('client')->check()){
             return $next($request);
         }
 

@@ -13,13 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layout.master');
-})->name('test');
+Route::get('/11', function () {
+    return view('client.index');
+});
 
 Route::get('/login', 'AuthenticationController@login')->name('authentication.login');
 Route::post('/login', 'AuthenticationController@checkLogin')->name('authentication.checkLogin');
 
 Route::middleware(['auth.login'])->group(function () {
-
+    Route::prefix('client')->group(function () {
+        Route::get('/', 'ClientController@index')->name('client.index');
+        Route::get('ajax-get', 'ClientController@getClient')->name('client.get');
+    });
 });

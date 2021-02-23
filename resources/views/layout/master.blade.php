@@ -31,6 +31,9 @@
 
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    @yield('style')
+
 </head>
 <body class="@if($role->level > 5) skin-blue sidebar-mini @else skin-blue sidebar-mini sidebar-collapse @endif">
 <div class="wrapper">
@@ -56,7 +59,7 @@
 
         <!-- Main content -->
         <section class="content">
-
+            @yield('content')
         </section>
         <!-- /.content -->
     </div>
@@ -76,5 +79,7 @@
 <script src="{{ asset('theme/dist/js/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('theme/dist/js/demo.js') }}"></script>
+
+@yield('script')
 </body>
 </html>

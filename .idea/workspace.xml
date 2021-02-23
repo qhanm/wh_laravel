@@ -20,37 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71ab7ebc-832f-4e9d-801c-f1ee6ef0d7f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Components/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Components/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Helpers/HtmlHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Accounts/Client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Accounts/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Accounts/Staff.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.pjax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/qhn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/authentication/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/authentication/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/authentication/logo.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/wh_laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wh_laravel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AuthenticationMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AuthenticationMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Accounts/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounts/Client.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +157,19 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
       <path value="$PROJECT_DIR$/vendor/jacobbennett/pjax" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-html" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-editor" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-buttons" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ok1GpyTgbpjpZeEt6bl1fQupqr" />
@@ -207,7 +201,8 @@
       <updated>1613815681584</updated>
       <workItem from="1613815682787" duration="1798000" />
       <workItem from="1613817568004" duration="3859000" />
-      <workItem from="1613832949345" duration="19528000" />
+      <workItem from="1613832949345" duration="20641000" />
+      <workItem from="1614000428192" duration="5302000" />
     </task>
     <servers />
   </component>
@@ -243,9 +238,10 @@
       <screen x="-1920" y="-235" width="1920" height="1040" />
     </state>
     <state x="-1253" y="-116" width="585" height="801" key="find.popup/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613911368306" />
-    <state x="-1297" y="-10" width="672" height="678" key="search.everywhere.popup" timestamp="1613909342065">
-      <screen x="-1920" y="-235" width="1920" height="1040" />
+    <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614001265746">
+      <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="-1297" y="-10" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613909342065" />
+    <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614001265746" />
   </component>
 </project>

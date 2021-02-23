@@ -12,7 +12,6 @@ class AuthenticationController extends Controller
 {
     public function login()
     {
-        //dd(Session::all());
         return view('authentication.login')->with(['roles' => Role::ROLES]);
     }
 
@@ -36,7 +35,7 @@ class AuthenticationController extends Controller
             Session::put('user_role', $user->role()->first());
             Session::put('user_information', $user->information()->first());
 
-            return redirect()->route('test');
+            return redirect()->route('client.index');
         }
 
         $validator->errors()->add('username', 'Username or password invalid');

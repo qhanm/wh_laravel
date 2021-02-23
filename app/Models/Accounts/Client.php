@@ -31,7 +31,8 @@ class Client extends Authenticatable
         'password',
         'remember_token',
         'no',
-        'internal_ref'
+        'internal_ref',
+        'information',
     ];
 
     protected $hidden = [
@@ -48,4 +49,5 @@ class Client extends Authenticatable
     {
         return $this->hasOne(Information::class, 'id', 'fk_information');
     }
+
 }
