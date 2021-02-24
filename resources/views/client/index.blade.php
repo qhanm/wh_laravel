@@ -5,17 +5,31 @@
         <div class="col-md-12">
             <div class="box">
                 <div class="box-body">
-                    <table id="users-table" class="table table-condensed table table-bordered yajra-datatable">
-                        <thead>
-                        <tr>
-                            <th>Client No.</th>
-                            <th>Username</th>
-                            <th>Full Name</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="{{ asset(route('client.create')) }}" class="btn btn-success">
+                                <i class="fa fa-plus-circle"></i> Create
+                            </a>
+                            <button class="btn btn-success"><i class="fa fa-download"></i> Export</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table id="users-table" class="table table-condensed table table-bordered yajra-datatable">
+                                <thead>
+                                <tr>
+                                    <th>Client No.</th>
+                                    <th>Full Name</th>
+                                    <th>Created</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,8 +48,9 @@
             ajax: "{{ route('client.get') }}",
             columns: [
                 {data: 'no', name: 'no'},
-                {data: 'username', name: 'username'},
-                {data: 'information', name: 'information.first_name'}
+                {data: 'information', name: 'information'},
+                {data: 'created'},
+                {data: 'action'}
             ]
         });
     </script>

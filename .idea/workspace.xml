@@ -20,17 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71ab7ebc-832f-4e9d-801c-f1ee6ef0d7f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/client/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wh_laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wh_laravel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/yii2settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helpers/StringHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/General/Country.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/client/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/HtmlHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/HtmlHelper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AuthenticationMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AuthenticationMiddleware.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Accounts/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounts/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/qhn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/qhn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -179,11 +180,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\wh_laravel\app\Models\General" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -203,6 +210,7 @@
       <workItem from="1613817568004" duration="3859000" />
       <workItem from="1613832949345" duration="20641000" />
       <workItem from="1614000428192" duration="5302000" />
+      <workItem from="1614149342785" duration="12452000" />
     </task>
     <servers />
   </component>
@@ -226,22 +234,29 @@
       <screen x="-1920" y="-235" width="1920" height="1040" />
     </state>
     <state x="-1196" y="-19" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613821843998" />
-    <state x="-1230" y="40" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613821746071">
-      <screen x="-1920" y="-235" width="1920" height="1040" />
+    <state x="-1230" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614158336756">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="40" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613821746071" />
+    <state x="-1230" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1614158336756" />
+    <state x="-1126" y="439" key="NewPhpFileDialog" timestamp="1614160067396">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1126" y="439" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1614160067396" />
     <state x="-1459" y="-70" key="SettingsEditor" timestamp="1613817488905">
       <screen x="-1920" y="-235" width="1920" height="1040" />
     </state>
     <state x="-1459" y="-70" key="SettingsEditor/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613817488905" />
-    <state x="-1253" y="-116" width="585" height="801" key="find.popup" timestamp="1613911368306">
-      <screen x="-1920" y="-235" width="1920" height="1040" />
+    <state x="-1253" y="119" width="585" height="801" key="find.popup" timestamp="1614150722649">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1253" y="-116" width="585" height="801" key="find.popup/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613911368306" />
-    <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614001265746">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state x="-1253" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1614150722649" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614153572971">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1297" y="-10" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613909342065" />
     <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614001265746" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1614153572971" />
   </component>
 </project>

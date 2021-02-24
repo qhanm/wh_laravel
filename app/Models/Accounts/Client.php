@@ -16,6 +16,9 @@ use Illuminate\Notifications\Notifiable;
  * @property string $remember_token
  * @property string $no
  * @property string $internal_ref
+ * @property Information $information
+ * @property string $created_at
+ * @property string $updated_at
  */
 class Client extends Authenticatable
 {

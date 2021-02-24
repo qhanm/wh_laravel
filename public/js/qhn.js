@@ -7,3 +7,12 @@ $(document).on('ready pjax:end', function(event) {
 
     $('.select2').select2();
 })
+
+
+$(document).on('submit', 'form[data-pjax]', function(event) {
+    event.preventDefault();
+
+    let pjax = $(this).parent();
+
+    $.pjax.submit(event, '#' + $(pjax).attr('id'));
+})

@@ -24,5 +24,7 @@ Route::middleware(['auth.login'])->group(function () {
     Route::prefix('client')->group(function () {
         Route::get('/', 'ClientController@index')->name('client.index');
         Route::get('ajax-get', 'ClientController@getClient')->name('client.get');
+        Route::get('/create', 'ClientController@create')->name('client.create');
+        Route::post('/store', 'ClientController@store')->name('client.store');
     });
 });
