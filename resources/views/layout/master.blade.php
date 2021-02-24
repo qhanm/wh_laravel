@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="{{ asset('theme/bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('theme/bower_components/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('theme/bower_components/Ionicons/css/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('theme/bower_components/select2/dist/css/select2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('theme/dist/css/AdminLTE.min.css') }}">
     <link rel="stylesheet" href="{{ asset('theme/dist/css/skins/_all-skins.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('theme/bower_components/select2/dist/css/select2.min.css') }}">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -61,6 +61,10 @@
 <script src="{{ asset('theme/dist/js/demo.js') }}"></script>
 <script src="{{ asset('js/jquery.pjax.js') }}"></script>
 <script src="{{ asset('js/qhn.js') }}"></script>
+<script>
+    $('.select2').select2();
+</script>
 @yield('script')
+
 </body>
 </html>

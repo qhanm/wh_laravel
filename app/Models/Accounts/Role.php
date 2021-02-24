@@ -17,6 +17,8 @@ class Role extends Model
         'staff' => 'Staff',
     ];
 
+    const ROLE_CLIENT = 4;
+
     protected $table = 'role';
 
     protected $fillable = [

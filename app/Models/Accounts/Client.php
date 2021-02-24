@@ -53,4 +53,8 @@ class Client extends Authenticatable
         return $this->hasOne(Information::class, 'id', 'fk_information');
     }
 
+    public static function lastId()
+    {
+        return self::query()->max('id');
+    }
 }

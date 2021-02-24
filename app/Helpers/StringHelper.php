@@ -8,4 +8,9 @@ class StringHelper
         $attribute = str_replace('_', ' ', $attribute);
         return ucwords($attribute);
     }
+
+    static function uppercasePrefix(string $text)
+    {
+        return strtoupper(substr($text, 0, 3));
+    }
 }

@@ -47,14 +47,19 @@ class HtmlHelper
             foreach ($data as $k => $v)
             {
                 if($selected == $k){
-                    $html = '<option value="'.$k.'" selected>'.$v.'</option>';
+                    $html .= '<option value="'.$k.'" selected>'.$v.'</option>';
                 }else{
-                    $html = '<option value="'.$k.'">'.$v.'</option>';
+                    $html .= '<option value="'.$k.'">'.$v.'</option>';
                 }
             }
         }
         $html .= '</select>';
-        return $html;
+        return '
+            <div class="form-group has-feedback ">
+                <label for="postal_code">'. StringHelper::parseAttributeToString($name) .'</label>
+                '.$html.'
+            </div>
+        ';
     }
 
     ##

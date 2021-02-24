@@ -1,5 +1,6 @@
 @php
     /** @var \App\Models\Accounts\Client $model */
+    /** @var array $countries */
 @endphp
 
 @extends('layout.master')
@@ -9,7 +10,8 @@
         <form action="{{ route('client.store') }}" method="post" data-pjax="">
             @csrf
             @include('client._form', [
-                'model' => $model
+                'model' => $model,
+                'countries' => $countries
             ])
         </form>
     </div>

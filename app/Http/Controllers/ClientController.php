@@ -4,10 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Components\Controller;
 use App\Helpers\HtmlHelper;
+use App\Helpers\StringHelper;
 use App\Http\Requests\ClientRequest;
 use App\Models\Accounts\Client;
+use App\Models\Accounts\Role;
+use App\Models\General\Country;
 use App\Models\General\Information;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Yajra\DataTables\DataTables;
 
@@ -41,18 +47,35 @@ class ClientController extends Controller
 
     public function create()
     {
+        dd(Client::lastId());
         $model = new Client();
+        $countries = Country::query()->get()->toArray();
 
         return view('client.create', [
-            'model' => $model
+            'model' => $model,
+            'countries' => Arr::pluck($countries, 'name'),
         ]);
     }
 
     public function store(ClientRequest $request)
     {
+        try
+        {
+            DB::beginTransaction();
+            $mInformation = new Information();
+            $mInformation->fill($request->all());
+            $mInformation->save();
 
-        $request->validate();
+            $mClient = new Client();
+            $mClient->fill($request->all());
+            $mClient->fk_information = $mInformation->id;
+            $mClient->fk_role = Role::ROLE_CLIENT;
+            $mClient->password = Hash::make($mClient->password);
 
-        return redirect()->route('client.create')->withInput()->withErrors($validator);
+        }catch (\Exception $exception){
+            DB::rollBack();
+            return false;
+        }
+
     }
 }

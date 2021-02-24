@@ -27,7 +27,8 @@
                             {!! \App\Helpers\HtmlHelper::input($errors, 'address') !!}
                             {!! \App\Helpers\HtmlHelper::input($errors, 'postal_code') !!}
                             {!! \App\Helpers\HtmlHelper::input($errors, 'city') !!}
-                            {!! \App\Helpers\HtmlHelper::input($errors, 'country') !!}
+
+                            {!! \App\Helpers\HtmlHelper::select($countries, 'country', (string)old('country')) !!}
                             {!! \App\Helpers\HtmlHelper::input($errors, 'phone') !!}
                             {!! \App\Helpers\HtmlHelper::input($errors, 'fax') !!}
                         </div>
