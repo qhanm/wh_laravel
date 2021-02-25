@@ -47,7 +47,6 @@ class ClientController extends Controller
 
     public function create()
     {
-        dd(Client::lastId());
         $model = new Client();
         $countries = Country::query()->get()->toArray();
 
@@ -71,10 +70,19 @@ class ClientController extends Controller
             $mClient->fk_information = $mInformation->id;
             $mClient->fk_role = Role::ROLE_CLIENT;
             $mClient->password = Hash::make($mClient->password);
+            $mClient->no = StringHelper::createStringNumber((string)(Client::lastId() + 1));
+            $mClient->internal_ref = StringHelper::uppercasePrefix($mInformation->first_name) . '-' . $mClient->no;
+            $mClient->save();
 
+            DB::commit();
+            return redirect()->route('client.index');
         }catch (\Exception $exception){
             DB::rollBack();
-            return false;
+
+            $validator = Validator::make([], []);
+            $validator->errors()->add('error', $exception->getMessage());
+
+            return redirect()->route('client.create')->withInput()->withErrors($validator);
         }
 
     }

@@ -21,15 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="71ab7ebc-832f-4e9d-801c-f1ee6ef0d7f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/HtmlHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/HtmlHelper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Helpers/StringHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/StringHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ClientRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ClientRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Accounts/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounts/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Accounts/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Accounts/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/authentication/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/authentication/layout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +202,9 @@
       <workItem from="1613832949345" duration="20641000" />
       <workItem from="1614000428192" duration="5302000" />
       <workItem from="1614149342785" duration="12452000" />
+      <workItem from="1614217398934" duration="197000" />
+      <workItem from="1614217792975" duration="660000" />
+      <workItem from="1614219377801" duration="1813000" />
     </task>
     <servers />
   </component>
@@ -248,11 +246,11 @@
     </state>
     <state x="-1253" y="-116" width="585" height="801" key="find.popup/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613911368306" />
     <state x="-1253" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1614150722649" />
-    <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614173480383">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614153572971">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1297" y="-10" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1920.-235.1920.1040@-1920.-235.1920.1040" timestamp="1613909342065" />
-    <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614173480383" />
+    <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1614001265746" />
     <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1614153572971" />
   </component>
 </project>
