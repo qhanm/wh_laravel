@@ -84,6 +84,17 @@ class ClientController extends Controller
 
             return redirect()->route('client.create')->withInput()->withErrors($validator);
         }
+    }
+
+    public function delete($id){
+
+    }
+
+    public function show($id){
+
+    }
+
+    public function update($id){
 
     }
 }

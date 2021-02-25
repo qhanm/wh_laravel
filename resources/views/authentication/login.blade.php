@@ -10,8 +10,8 @@
         <p class="login-box-msg">Sign in to start your session</p>
         <form id="frmLogin" action="{{ route('authentication.checkLogin') }}" method="post" data-pjax=''>
             @csrf
-            {!! HtmlHelper::inputIcon($errors, 'username', 'glyphicon glyphicon-user', 'Enter Username') !!}
-            {!! HtmlHelper::inputIcon($errors, 'password', 'glyphicon glyphicon-lock', 'Enter Password') !!}
+            {!! HtmlHelper::inputIcon($errors, 'username', 'glyphicon glyphicon-user', 'text') !!}
+            {!! HtmlHelper::inputIcon($errors, 'password', 'glyphicon glyphicon-lock', 'password') !!}
             <div class="form-group @if($errors->has('role')) has-error @endif">
                 <label>Login with</label>
                 <select name="role" class="form-control select2" style="width: 100%;">

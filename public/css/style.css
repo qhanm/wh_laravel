@@ -1,0 +1,12 @@
+/** css modal center */
+.qhn-modal-dialog {
+    padding-top:10%;
+}
+
+.qhn-modal-content {
+    overflow:visible;
+}
+
+.qhn-modal-body {
+    overflow: auto;
+}
