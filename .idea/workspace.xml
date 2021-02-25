@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71ab7ebc-832f-4e9d-801c-f1ee6ef0d7f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/StringHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/StringHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthenticationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/authentication/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/authentication/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_20_104808_create_information_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_20_104808_create_information_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/_form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,6 +203,7 @@
       <workItem from="1614217398934" duration="197000" />
       <workItem from="1614217792975" duration="660000" />
       <workItem from="1614219377801" duration="1813000" />
+      <workItem from="1614246577648" duration="1605000" />
     </task>
     <servers />
   </component>

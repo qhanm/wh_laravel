@@ -14,6 +14,16 @@
                     </div>
                     <hr>
                     <div class="row">
+                        @if($errors->has('error'))
+                            <div class="col-md-12">
+                                <div class="alert alert-danger alert-dismissible">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    <h4><i class="icon fa fa-ban"></i> Alert!</h4>
+                                    {{ $errors->first('error') }}
+                                </div>
+                            </div>
+                        @endif
+
                         <div class="col-md-6">
                             {!! \App\Helpers\HtmlHelper::input($errors, 'email') !!}
                             {!! \App\Helpers\HtmlHelper::input($errors, 'username') !!}
