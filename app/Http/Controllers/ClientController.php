@@ -40,7 +40,7 @@ class ClientController extends Controller
                 return date('d-m-Y H:i:s', strtotime($client->created_at));
             })
             ->addColumn('action', function (Client $client) {
-                return HtmlHelper::renderAction(route('authentication.login'), $client->id, ['view', 'edit', 'delete']);
+                return HtmlHelper::renderAction(route('client.index'), $client->id, ['view', 'edit', 'delete']);
             })
             ->make(true);
     }

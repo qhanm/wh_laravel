@@ -27,6 +27,8 @@ Route::middleware(['auth.login'])->group(function () {
         Route::get('create', 'ClientController@create')->name('client.create');
         Route::post('store', 'ClientController@store')->name('client.store');
 
-        Route::post('delete', 'ClientController@delete')->name('client.delete')
+        Route::post('delete/{id}', 'ClientController@delete')->name('client.delete');
+        Route::get('show/{id}', 'ClientController@show')->name('client.show');
+        Route::get('update/{id}', 'ClientController@update')->name('client.delete');
     });
 });
